@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <title>Ejercicio HTML CSS</title>
+    <style>
+        .logos{
+            width: 100px;
+            height: 125x;
+        }
+        .parrafo{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1px ;
+            display: inline;
+        }
+        .parrafo:hover{
+            background-color: khaki;
+        }
+        .titulo{
+            font-family: 'Rajdhani', sans-serif;
+        }
+        .celda{
+            background-color:lightskyblue;
+        }
+        .btnImagen{
+            background-color: rgb(8,132,132);
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            border: 3px;
+            padding: 4px 6px;
+            text-decoration: none;
+        }
+        .linkMenu{
+            text-decoration: none;
+            color: white;
+            padding: 5px 3px;
+            display: inline;
+            margin-left: -1px;
+            border: solid white 1px;
+            border-radius: 2px;
+            background-color: rgb(8,132,132);
+            margin-top: 2px;
+            margin-bottom: 1px;
+            line-height:32px;
+            padding: 3px 5px;
+        }
+        .linkMenu:hover{
+            background-color:rgb(20, 103, 109);
+        }
+        .imagen{
+            margin-top: 5px;
+            width: 75px; 
+            height: 75px;
+            display: block;
+        }
+        button:hover{
+            background-color:rgb(20, 103, 109);
+        }
+        td{
+            border:dodgerblue solid 1px;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btnImagen:hover{
+            background-color: rgba(185, 2, 2, 0.788);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div style="margin-top: 0px;">
+        <img class="logos" src="uaslp.png" alt="Logo UASLP">
+        <img class="logos" style="float: right;" src="fi.png" alt="Logo Facultad de Ingeniería">
+    </div>
+
+    <div style="text-align: center;">
+        <h1 style="font-family: 'Shadows Into Light', cursive;">
+            Ejercicio de Repaso
+        </h1>
+        <h3>
+            Daniel Gutiérrez Rodríguez
+        </h3>
+    </div>
+
+    <div style="text-align: right; background-color: rgb(8,132,132); height:max-content">
+        <a class="linkMenu" href="#texto">Texto</a>
+        <a class="linkMenu" href="#tablas">Tablas</a>
+        <a class="linkMenu" href="#imagenes" style="margin-right:2px ;">Imágenes</a>
+    </div>
+
+    <div id="texto">
+        <h3 class="titulo">Texto</h3>
+        <p class="parrafo">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur assumenda consequatur nihil quis doloribus, architecto aliquid eum quaerat? Perspiciatis veritatis doloremque ut, tempore itaque officiis nesciunt a nobis porro alias.
+        </p>
+        <p class="parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perferendis non libero. Molestias, ab suscipit! Maxime, alias consequuntur voluptas vero reprehenderit perferendis ratione nulla itaque dignissimos repellat consectetur eius! Tempore!
+        </p>
+    </div>
+
+    <div style="background-color:lightgray; height: 2px; margin-top: 15px;"></div>
+    <br>
+
+    <div id="tablas">
+        <h3 class="titulo">Tablas</h3>
+        <table style="border-collapse: collapse;">
+            <thead >
+                <tr>
+                    <td class="celda">Frameworks</td>
+                    <td class="celda">Front End</td>
+                    <td class="celda">Back End</td>
+                </tr>
+                <tr>
+                    <td class="celda">Bootstrap</td>
+                    <td style="font-weight: normal;">X</td>
+                    <td style="font-weight: normal;"></td>
+                </tr>
+                <tr>
+                    <td class="celda">JQuery</td>
+                    <td style="font-weight: normal;">X</td>
+                    <td style="font-weight: normal;"></td>
+                </tr>
+                <tr>
+                    <td class="celda">NodeJS</td>
+                    <td style="font-weight: normal;" colspan="2">X</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div>
+        <h3 class="titulo">Links</h3>
+        <a href="https://google.com" class="linkMenu" style="border-radius: 4px; border-color: black;">Google</a>
+        <a href="https://youtube.com" class="linkMenu" style="border-radius: 4px; border-color: black;">Youtube</a>
+    </div>
+
+    <div id="imagenes">
+        <h3 class="titulo">Imagenes</h3>
+        <a class="btnImagen">Clic aquí para cambiar de Imagen.</a>
+
+        <img src="uaslp.png" class="imagen" style="display: block;">
+        <img src="fi.png" class="imagen" style="display:block;">
+
+        </div>
+    </div>
+</body>
+</html>
